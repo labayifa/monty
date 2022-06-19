@@ -13,8 +13,6 @@
 #include <ctype.h>
 #define Buffsize 30
 
-extern vars var;
-
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)

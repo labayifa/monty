@@ -1,5 +1,4 @@
 #include "monty.h"
-
 /**
  * pall - Print list
  * @stack: Double linked list
@@ -54,9 +53,9 @@ void push(stack_t **stack, unsigned int line_number)
 	}
 	else
 	{
-		while (temp->next)
-			tm = temp->next;
-		temp->next = tmp;
+		while (tm->next)
+			tm = tm->next;
+		tm->next = tmp;
 		tmp->prev = tm;
 		tmp->next = NULL;
 	}
@@ -79,10 +78,10 @@ void pint(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pop - Delete top of list
- * @stack: Double linked list
- * @line_number: File line execution
- */
+* pop - Delete top of list
+* @stack: Double linked list
+* @line_number: File line execution
+*/
 void pop(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp;
