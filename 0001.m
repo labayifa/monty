@@ -1,4 +1,4 @@
-push 3
+push 12
 push 20
-push 111
+push 90
 pall
